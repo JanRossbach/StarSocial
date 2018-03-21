@@ -14,12 +14,12 @@ User = get_user_model()
 
 
 class PostList(SelectRelatedMixin, generic.ListView):
-    model = models.PostList
+    model = models.Post
     select_related = ('user', 'group')
 
 
 class UserPosts(generic.ListView):
-    model = models.PostList
+    model = models.Post
     template_name = 'posts/user_post_list.html'
 
     def get_queryset(self):

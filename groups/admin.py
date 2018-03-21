@@ -7,4 +7,4 @@ class GroupMemberInLIne(admin.TabularInline):
     model = models.GroupMember
 
 
-admin.sige.register(models.Group)
+admin.site.register(models.Group)
